@@ -1,0 +1,2 @@
+# This document describes how to set up the KQL analytics rule in MS Sentinel to be able to alert when a VM is created or deleted. It is important to be notified of such events because attackers often try to gain access to our system via deploying their own cloud resources.
+## Related MITRE ATTACK tactic: TA0005: Defense evasion - technqique: T1578: Modify cloud compute infrastructure - Procedures: T1578.002 and T1578.003: Create cloud infrastructure an Delete cloud infrastructure
