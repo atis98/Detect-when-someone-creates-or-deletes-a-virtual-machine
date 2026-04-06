@@ -2,4 +2,5 @@
 ## Related MITRE ATTACK tactic: TA0005: Defense evasion - technqique: T1578: Modify cloud compute infrastructure - Procedures: T1578.002 and T1578.003: Create cloud infrastructure an Delete cloud infrastructure
 ## Steps:
 - First I had to make sure the Azure Activity data source is connected to MS Sentinel to be able to create the analytics rule. This means connecting the Azure Activity connector: <img width="1379" height="722" alt="Screenshot 2026-04-06 at 07 39 27" src="https://github.com/user-attachments/assets/df003d0b-ba88-4326-8b11-81b47ec0392f" />
-- 
+- This means the "AzureActivity" table should be providing events - I tested the query first in MS Sentinel Logs and it already showed some events, meaning it works fine: <img width="1379" height="722" alt="Screenshot 2026-04-06 at 07 50 35" src="https://github.com/user-attachments/assets/d9393be9-cf14-4890-b388-e827e38035ed" />
+- Lastly, I created the analytics rule in the Defender portal to receive alerts from these events and group them into an incident: <img width="1379" height="722" alt="Screenshot 2026-04-06 at 07 53 39" src="https://github.com/user-attachments/assets/dbd759de-46d2-458f-bcec-9ff43da6028c" />
